@@ -35,6 +35,8 @@ namespace Hovis.Web.Base
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.min.js",
+                      "~/Content/vendor/bootstrap-select/bootstrap-select.js",
+                      "~/Content/vendor/bootstrap-datepicker/bootstrap-datepicker.js",
                       "~/Scripts/respond.js"));
 
             // Set EnableOptimizations to false for debugging. For more information,

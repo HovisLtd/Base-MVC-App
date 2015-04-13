@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <!-- /meta -->
-    @{
-        string pageTitle = @ViewBag.Title ?? "Hovis Application";
-    }
-    <title>@pageTitle</title>
-    @Styles.Render("~/Content/css");
+    <title>@ViewBag.Title - Hovis ???</title>
+    @Styles.Render("~/content/bundles/css")
+    @Styles.Render("~/content/bundles/fonts")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
 
     <!-- page level plugin styles -->
     <link rel="stylesheet" href="/Content/vendor/offline/theme.css">
@@ -84,8 +84,7 @@
     <script src="/Scripts/main.js"></script>
     <!-- /core scripts -->
     <!-- page level scripts -->
-    @Scripts.Render("~/bundles/bootstrap")
-
+    <script src="/Scripts/main.js"></script>
     @RenderSection("scripts", required: false)
     <!-- /page level scripts -->
 </body>
